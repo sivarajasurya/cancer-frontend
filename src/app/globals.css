@@ -15,7 +15,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
 
@@ -24,3 +23,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* quick helpers */
+.input { @apply w-full rounded-xl border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400; }
+.btn { @apply rounded-xl px-4 py-2 border shadow-sm hover:shadow; }
+.card { @apply rounded-2xl border p-4 shadow-sm bg-white; }
+.link { @apply text-blue-600 hover:underline; }
